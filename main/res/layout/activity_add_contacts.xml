@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="digitaldreamers.smartsms.FTC_Activities.Welcome"
+    android:background="#fefefe">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Add the Contacts to be alerted"
+                android:id="@+id/addContact_mainHeading"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="43dp"
+                android:textSize="20dp"
+                android:textColor="@color/headingText" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/addContact_selectedContactsLL"
+                android:layout_marginTop="20dp"
+                android:animateLayoutChanges="true"
+                android:layout_below="@+id/addContact_mainHeading"
+                android:layout_above="@+id/linearLayout"
+                android:layout_marginBottom="10dp"
+                android:divider="@drawable/separator"
+                android:showDividers="middle"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:dividerPadding="5dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/linearLayout"
+                android:divider="@drawable/separator"
+                android:fadeScrollbars="false"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Add  Contact"
+                    android:id="@+id/addContact_addcontactButton"
+                    android:background="@drawable/button_selector"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#fefefe"
+                    android:textAllCaps="true"
+                    android:textSize="15dp"
+                    android:elevation="0dp"
+                    android:gravity="center_horizontal"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2.5dp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Next"
+                    android:id="@+id/addContact_next"
+                    android:background="@drawable/button_selector"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#fefefe"
+                    android:textAllCaps="true"
+                    android:textSize="15dp"
+                    android:elevation="0dp"
+                    android:gravity="center_horizontal"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginRight="5dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="digitaldreamers.smartsms.FTC_Activities.Welcome"
+    android:background="#fefefe">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        layout="@layout/separater"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome To SmartSMS"
+        android:id="@+id/welcome_mainHeading"
+        android:textStyle="bold"
+        android:layout_marginBottom="31dp"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textIsSelectable="false"
+        android:textColor="@color/headingText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="SmartSMS alerts your loved ones  when your phone&apos;s battery is low  and is going to be switched off  So they need to worry when your  phone is unreachable."
+        android:id="@+id/textView4"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#0a0a0a"
+        android:padding="10dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Started"
+        android:id="@+id/welcome_letstartbutton"
+        android:background="@drawable/button_selector"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#fefefe"
+        android:textAllCaps="true"
+        android:textSize="15dp"
+        android:elevation="0dp"
+        android:gravity="center_horizontal"
+        android:clickable="true" />
+
+</RelativeLayout>

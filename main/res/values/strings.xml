@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SmartSMS</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_first_time_config">Welcome</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_add_contacts">addContacts</string>
+    <string name="title_activity_set_message">setMessage</string>
+</resources>

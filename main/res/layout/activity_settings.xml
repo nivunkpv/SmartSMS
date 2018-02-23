@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="digitaldreamers.smartsms.Settings">
+
+    <include
+        layout="@layout/toolbar_default"
+        android:id="@+id/settings_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView5"
+        android:fillViewport="true"
+        android:layout_below="@+id/settings_actionbar" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Service Settings"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <include
+                layout="@layout/separater_light"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start the service on Boot"
+                android:id="@+id/settings_onboot"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:button="@null"
+                android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                android:textSize="16dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="2dp" />
+
+            <include
+                layout="@layout/separater_black"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Battery Threshold Level : 3%"
+                android:id="@+id/settings_threshold"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#0a0a0a"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Data Settings"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <include
+                layout="@layout/separater_light"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Contact List"
+                android:id="@+id/settings_editcontacts"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#0a0a0a"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="16dp"
+                android:clickable="true" />
+
+            <include
+                layout="@layout/separater_black"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Message Text"
+                android:id="@+id/settings_editmessage"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#0a0a0a"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="16dp"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Credits and policy"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <include
+                layout="@layout/separater_light"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ABOUT US"
+                android:id="@+id/settings_about"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#0a0a0a"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:textSize="16dp"
+                android:clickable="true" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
